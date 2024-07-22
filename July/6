@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int removeDuplicates(vector<int> &arr, int n) {
+	// Write your code here.
+	
+	auto last = unique(arr.begin(),arr.end());
+	arr.erase(last,arr.end());
+	int result = arr.size() ;
+	
+	return result;
+}
