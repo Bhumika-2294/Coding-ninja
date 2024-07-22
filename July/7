@@ -1,0 +1,24 @@
+#include <bits/stdc++.h> 
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+bool checkPalindrome(string s)
+{   string result;
+    // Write your code here.
+    // s = ;
+    for(int i=0;i<s.length();i++){
+        if(isalnum(s[i])){
+            result += tolower(s[i]) ;
+
+        }
+    }
+    string m;
+    for(int i=result.length()-1;i>=0;i--){
+        m.push_back(result[i]);
+    }
+
+    return m == result ;
+
+
+}
