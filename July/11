@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+#include <algorithm>
+using namespace std;
+
+
+float cf(float n){
+    //cel to fereh
+    return (n*9/5)+32 ;
+}
+int main(){
+    float n;
+    cin>>n;
+    cout<<(cf(n));
+    return 0;
+    
+}
